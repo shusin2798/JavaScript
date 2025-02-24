@@ -8,7 +8,7 @@ let n3 = "dim"
 const n2 = "tim" //const will not allow the value to be changed for the variable n2
 //n2 = "him" throws TypeError: Assignement to constant variable
 n = "don"
-console.log(n) // will print don instead of shusin
+console.log(n) // will print don not shusin
 console.log(n2)
 console.log(n3)
 
