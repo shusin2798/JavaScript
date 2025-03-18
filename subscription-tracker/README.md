@@ -9,11 +9,9 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Build a **production-ready Subscription Management System API** that handles **real users, real money, and real business logic**.  
+Build a **Subscription Management System API** that handles **real users, real money, and real business logic**.  
 
 Authenticate users using JWTs, connect a database, create models and schemas, and integrate it with ORMs. Structure the architecture of your API to ensure scalability and seamless communication with the frontend.  
-
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **50k+** members. It's a place where people help each other out.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -110,13 +108,13 @@ Open [http://localhost:5500](http://localhost:5500) in your browser or any HTTP 
 
 ```json
 {
-  "name": "Javascript Mastery Elite Membership",
-  "price": 139.00,
-  "currency": "USD",
+  "name": "Netflix",
+  "price": 149.00,
+  "currency": "INR",
   "frequency": "monthly",
-  "category": "Entertainment",
+  "category": "entertainment",
   "startDate": "2025-01-20T00:00:00.000Z",
-  "paymentMethod": "Credit Card"
+  "paymentMethod": "UPI"
 }
 ```
 
