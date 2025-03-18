@@ -8,7 +8,7 @@ const aj = arcjet({
     shield({ mode: "LIVE" }), // protects against common attacks ex: sql injections
     detectBot({               // protects against bots
       mode: "LIVE",
-      allow: [ "CATEGORY:SEARCH_ENGINE" ],
+      allow: [ "CATEGORY:SEARCH_ENGINE", "POSTMAN"],
     }),
     tokenBucket({ // used for rate-limiting
       mode: "LIVE",

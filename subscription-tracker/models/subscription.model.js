@@ -37,12 +37,12 @@ const subscriptionSchema = new mongoose.Schema({
         enum: ['active', 'cancelled', 'expired'],
         default: 'active'
     },
-    startdate: {
+    startDate: {
         type: Date,
         required: true,
         validate: {
-            validator: (value) => value <= new Date(),
-            message: 'Start date must be in the past'
+          validator: (value) => value <= new Date(),
+          message: 'Start date must be in the past',
         }
     },
     renewalDate: {
@@ -72,7 +72,7 @@ subscriptionSchema.pre('save', function(next) {
             yearly: 365,
         };
 
-        this.renewalDate = new Date(this.startdate);
+        this.renewalDate = new Date(this.startDate);
         this.renewalDate.setDate(this.renewalDate.getDate() + renewalPeriods[this.frequency]);
     }
     if (this.renewalDate < new Date()) {
